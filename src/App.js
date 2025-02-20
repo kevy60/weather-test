@@ -1,17 +1,16 @@
 import './App.css';
 import React, { useState } from 'react';
 
-import {createMockServer} from './createMockServer';
+import { createMockServer } from './createMockServer';
 
-if(process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV === 'development') {
   createMockServer();
 }
-
-
 
 function App() {
   const [query, setQuery] = useState('');
   const [searchResults, setsearchResults] = useState([]);
+  const [selected, setSelected] = useState([]);
 
   const inputChangeHandler = (event) => {
     setQuery(event.target.value);
@@ -32,6 +31,10 @@ function App() {
       })
   }
 
+  const selectCity = (city) => {
+    setSelected((prevSelected) => [city, ...prevSelected]);
+  }
+
   return (
     <div className="App">
       <h1>Weather Application</h1>
@@ -39,7 +42,11 @@ function App() {
       <button data-testid="search-button" onClick={buttonClickHandler}>Search</button>
 
       <div data-testid="search-results">
-        {searchResults.map((city) => <div key={`${city.lat}-${city.lon}`}>{city.name} </div>)}
+        {searchResults.map((city) => <div key={`${city.lat}-${city.lon}`} onClick={() => selectCity(city)}>{city.name}, {city.lat}, {city.lon} </div>)}
+      </div>
+
+      <div data-testid="my-weather-list">
+        {selected.map((city) => <div key={`${city.lat}-${city.lon}`}>{city.name}</div>)}
       </div>
     </div>
   );
