@@ -1,0 +1,82 @@
+[
+    {
+      "name": "Melbourne",
+      "local_names": {
+        "ja": "メルボルン",
+        "eo": "Melburno",
+        "fr": "Melbourne",
+        "bn": "মেলবোর্ন",
+        "oc": "Melbourne",
+        "fi": "Melbourne",
+        "ko": "멜버른",
+        "de": "Melbourne",
+        "el": "Μελβούρνη",
+        "zh": "墨爾本",
+        "lt": "Melburnas",
+        "he": "מלבורן",
+        "ru": "Мельбурн",
+        "mr": "मेलबर्न",
+        "uk": "Мельбурн",
+        "es": "Melbourne",
+        "pl": "Melbourne",
+        "sr": "Мелбурн",
+        "ar": "ملبورن",
+        "it": "Melbourne",
+        "pt": "Melbourne",
+        "hi": "मेलबॉर्न",
+        "bg": "Мелбърн",
+        "mi": "Poipiripi",
+        "mk": "Мелбурн",
+        "sv": "Melbourne",
+        "is": "Melbourne",
+        "en": "Melbourne",
+        "kn": "ಮೆಲ್ಬೋರ್ನ್"
+      },
+      "lat": -37.8142454,
+      "lon": 144.9631732,
+      "country": "AU",
+      "state": "Victoria"
+    },
+    {
+      "name": "Melbourne",
+      "local_names": {
+        "ru": "Мельбурн",
+        "sr": "Мелбурн",
+        "uk": "Мелборн",
+        "en": "Melbourne",
+        "bn": "মেলবোর্ন",
+        "ja": "メルボーン"
+      },
+      "lat": 28.0785034,
+      "lon": -80.6077908,
+      "country": "US",
+      "state": "Florida"
+    },
+    {
+      "name": "Melbourne",
+      "lat": 41.9430186,
+      "lon": -93.1030319,
+      "country": "US",
+      "state": "Iowa"
+    },
+    {
+      "name": "Melbourne",
+      "local_names": {
+        "en": "Melbourne"
+      },
+      "lat": -37.8141705,
+      "lon": 144.9655616,
+      "country": "AU",
+      "state": "Victoria"
+    },
+    {
+      "name": "Melbourne CP",
+      "local_names": {
+        "en": "Melbourne CP"
+      },
+      "lat": 52.8228134,
+      "lon": -1.4283564,
+      "country": "GB",
+      "state": "England"
+    }
+  ]
