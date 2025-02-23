@@ -2,10 +2,20 @@ import './App.css';
 import React, { useState } from 'react';
 import { createMockServer } from './createMockServer';
 import Search from './components/Search';
-import WeatherList from './components/Weather_list';
+import WeatherCard from './components/WeatherCard';
 
 if (process.env.NODE_ENV === 'development') {
   createMockServer();
+}
+
+const WeatherList = ({ selected }) => {
+  return (
+    <div data-testid="my-weather-list">
+      {selected.map((city) => (
+        <WeatherCard key={`${city.lat}-${city.lon}`} city={city} />
+      ))}
+    </div>
+  );
 }
 
 function App() {
