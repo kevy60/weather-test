@@ -17,7 +17,7 @@ const WeatherCard = ({ city }) => {
     return (
         <div className={`weather-container ${weather && weather.main.toLowerCase()}`}>
             <h3>{city.name}</h3>
-            <p>{weather ? weather.temperature : '-/-'}</p>
+            <p>{weather ? `${weather.temperature}°C` : '-/-'}</p>
             <p>{weather && weather.main}</p>
         </div>
     );
