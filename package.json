@@ -38,6 +38,13 @@
     ]
   },
   "devDependencies": {
-    "miragejs": "^0.1.48"
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "babel-loader": "^8.4.1",
+    "css-loader": "^7.1.2",
+    "miragejs": "^0.1.48",
+    "style-loader": "^4.0.0"
   }
 }
